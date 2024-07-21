@@ -2,7 +2,7 @@
 Start-Transcript -Path "C:\WSLPorts\WSLPorts.log"
 
 # List of ports to Open
-$ports = @(11434, 3000);
+$ports = @(11434, 8080);
 
 # Get WSL IP
 $wslAddress = bash.exe -c "ip a | grep eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}'"
